@@ -6,7 +6,6 @@ export default function DataInputComponent() {
   const [marksData, setMarksData] = useState("");
 
   const submitData = async () => {
-
     //personal
     let newPersonalData = personalData.replace(/[\r\n]+/gm, "");
     let personalArr = [];
@@ -18,15 +17,15 @@ export default function DataInputComponent() {
       newPersonalArr2.push(element.substring(1, element.length - 1));
     }
     let personalDetails = {
-        rollNo: newPersonalArr2[1],
-        enrollmentNo: newPersonalArr2[3],
-        name: newPersonalArr2[6],
-        fatherName: newPersonalArr2[8],
-        motherName: newPersonalArr2[10],
-        gender: newPersonalArr2[12],
-        course: newPersonalArr2[14],
-        branch: newPersonalArr2[16],
-    }
+      rollNo: newPersonalArr2[1],
+      enrollmentNo: newPersonalArr2[3],
+      name: newPersonalArr2[6],
+      fatherName: newPersonalArr2[8],
+      motherName: newPersonalArr2[10],
+      gender: newPersonalArr2[12],
+      course: newPersonalArr2[14],
+      branch: newPersonalArr2[16],
+    };
     console.log(personalDetails);
     //personal end
 
@@ -44,6 +43,11 @@ export default function DataInputComponent() {
 
     let papers = [];
     for (let i = 0; i < newArr.length; i += 11) {
+      let paperSemesterNo = 0;
+      if (i < 66) paperSemesterNo = 1;
+      else if (i < 132) paperSemesterNo = 2;
+      else if (i < 209) paperSemesterNo = 3;
+      else paperSemesterNo = 4;
       let paper = {
         paperNo: newArr[i],
         paperCode: newArr[i + 1],
@@ -56,27 +60,31 @@ export default function DataInputComponent() {
         paperCredits: newArr[i + 8],
         paperGradePoints: newArr[i + 9],
         paperPointsScored: newArr[i + 10],
+        paperSemesterNo: paperSemesterNo
       };
       papers.push(paper);
     }
     //marks end
-
     const payload = {
       papers,
-      personalDetails
+      personalDetails,
     };
-    const res = await axios.post(
-      "http://localhost:5000/api/student/add",
-      payload
-    );
-    console.log(res.data);
+    try {
+      const res = await axios.post(
+        "http://localhost:5000/api/student/add",
+        payload
+      );
+      console.log(res.data);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
     <div className="container">
       <div className="main my-3">
         <h2 className="display-5 m-4">Input Data</h2>
-            <h2>Enter Personal Details</h2>
+        <h2>Enter Personal Details</h2>
         <div className="form-group d-flex justify-content-center py-4">
           <textarea
             name=""
@@ -88,7 +96,7 @@ export default function DataInputComponent() {
           ></textarea>
         </div>
 
-            <h2>Enter Mark Details</h2>
+        <h2>Enter Mark Details</h2>
         <div className="form-group d-flex justify-content-center py-4">
           <textarea
             name=""
