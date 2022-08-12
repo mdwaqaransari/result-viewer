@@ -1,0 +1,461 @@
+[{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629c8"
+  },
+  "paperNo": "1",
+  "paperCode": "MAS-103",
+  "paperName": "Communication for Business & Management",
+  "paperType": "Au.",
+  "paperCEMarks": "43",
+  "paperMEMarks": "39",
+  "paperTotalMarks": "82",
+  "paperGrade": "A",
+  "paperCredits": "5",
+  "paperGradePoints": "9",
+  "paperPointsScored": "45",
+  "paperSemesterNo": "1",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d3"
+  },
+  "paperNo": "6",
+  "paperCode": "MMS-607",
+  "paperName": "Applied Computational Methods",
+  "paperType": "Au.",
+  "paperCEMarks": "35",
+  "paperMEMarks": "30",
+  "paperTotalMarks": "65",
+  "paperGrade": "B",
+  "paperCredits": "5",
+  "paperGradePoints": "7",
+  "paperPointsScored": "35",
+  "paperSemesterNo": "2",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d4"
+  },
+  "paperNo": "1",
+  "paperCode": "MCA-301",
+  "paperName": "Artificial Intelligence",
+  "paperType": "Cr.",
+  "paperCEMarks": "41",
+  "paperMEMarks": "40",
+  "paperTotalMarks": "81",
+  "paperGrade": "A",
+  "paperCredits": "5",
+  "paperGradePoints": "9",
+  "paperPointsScored": "45",
+  "paperSemesterNo": "3",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d7"
+  },
+  "paperNo": "4",
+  "paperCode": "MCA-Ind",
+  "paperName": "Industrial/Practical Training",
+  "paperType": "Au.",
+  "paperCEMarks": "38",
+  "paperMEMarks": "55",
+  "paperTotalMarks": "93",
+  "paperGrade": "A+",
+  "paperCredits": "1",
+  "paperGradePoints": "10",
+  "paperPointsScored": "10",
+  "paperSemesterNo": "3",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d8"
+  },
+  "paperNo": "5",
+  "paperCode": "MCA-303",
+  "paperName": "Design & Analysis of Algorithms",
+  "paperType": "Cr.",
+  "paperCEMarks": "34",
+  "paperMEMarks": "36",
+  "paperTotalMarks": "70",
+  "paperGrade": "B+",
+  "paperCredits": "5",
+  "paperGradePoints": "8",
+  "paperPointsScored": "40",
+  "paperSemesterNo": "3",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d9"
+  },
+  "paperNo": "6",
+  "paperCode": "MCA-304",
+  "paperName": "Cloud Computing",
+  "paperType": "Cr.",
+  "paperCEMarks": "44",
+  "paperMEMarks": "46",
+  "paperTotalMarks": "90",
+  "paperGrade": "A+",
+  "paperCredits": "5",
+  "paperGradePoints": "10",
+  "paperPointsScored": "50",
+  "paperSemesterNo": "3",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629da"
+  },
+  "paperNo": "7",
+  "paperCode": "MCA-352",
+  "paperName": "Python Programming",
+  "paperType": "Cr.",
+  "paperCEMarks": "50",
+  "paperMEMarks": "41",
+  "paperTotalMarks": "91",
+  "paperGrade": "A+",
+  "paperCredits": "4",
+  "paperGradePoints": "10",
+  "paperPointsScored": "40",
+  "paperSemesterNo": "3",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629db"
+  },
+  "paperNo": "1",
+  "paperCode": "MCA-401",
+  "paperName": "Internet of things",
+  "paperType": "Cr.",
+  "paperCEMarks": "42",
+  "paperMEMarks": "31",
+  "paperTotalMarks": "73",
+  "paperGrade": "B+",
+  "paperCredits": "5",
+  "paperGradePoints": "8",
+  "paperPointsScored": "40",
+  "paperSemesterNo": "4",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629dc"
+  },
+  "paperNo": "2",
+  "paperCode": "MCA-Prj",
+  "paperName": "Project/P",
+  "paperType": "Cr.",
+  "paperCEMarks": "45",
+  "paperMEMarks": "30",
+  "paperTotalMarks": "75",
+  "paperGrade": "B+",
+  "paperCredits": "10",
+  "paperGradePoints": "8",
+  "paperPointsScored": "80",
+  "paperSemesterNo": "4",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629dd"
+  },
+  "paperNo": "3",
+  "paperCode": "MCA-454",
+  "paperName": "Mobile Computing /PE2",
+  "paperType": "Cr.",
+  "paperCEMarks": "45",
+  "paperMEMarks": "35",
+  "paperTotalMarks": "80",
+  "paperGrade": "A",
+  "paperCredits": "4",
+  "paperGradePoints": "9",
+  "paperPointsScored": "36",
+  "paperSemesterNo": "4",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629de"
+  },
+  "paperNo": "4",
+  "paperCode": "MCA-Sem",
+  "paperName": "Seminar/AC",
+  "paperType": "Au.",
+  "paperCEMarks": "94",
+  "paperMEMarks": "---",
+  "paperTotalMarks": "94",
+  "paperGrade": "A+",
+  "paperCredits": "3",
+  "paperGradePoints": "10",
+  "paperPointsScored": "30",
+  "paperSemesterNo": "4",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d5"
+  },
+  "paperNo": "2",
+  "paperCode": "MCA-305",
+  "paperName": "Mini Project ",
+  "paperType": "Cr.",
+  "paperCEMarks": "45",
+  "paperMEMarks": "45",
+  "paperTotalMarks": "90",
+  "paperGrade": "A+",
+  "paperCredits": "2",
+  "paperGradePoints": "10",
+  "paperPointsScored": "20",
+  "paperSemesterNo": "3",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d6"
+  },
+  "paperNo": "3",
+  "paperCode": "MCA-302",
+  "paperName": "Computer Network",
+  "paperType": "Cr.",
+  "paperCEMarks": "41",
+  "paperMEMarks": "40",
+  "paperTotalMarks": "81",
+  "paperGrade": "A",
+  "paperCredits": "5",
+  "paperGradePoints": "9",
+  "paperPointsScored": "45",
+  "paperSemesterNo": "3",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629c9"
+  },
+  "paperNo": "2",
+  "paperCode": "MCA-115",
+  "paperName": "Software Lab-1",
+  "paperType": "Cr.",
+  "paperCEMarks": "42",
+  "paperMEMarks": "41",
+  "paperTotalMarks": "83",
+  "paperGrade": "A",
+  "paperCredits": "2",
+  "paperGradePoints": "9",
+  "paperPointsScored": "18",
+  "paperSemesterNo": "1",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629cd"
+  },
+  "paperNo": "6",
+  "paperCode": "MCA-114",
+  "paperName": "Software Engineering",
+  "paperType": "Cr.",
+  "paperCEMarks": "47",
+  "paperMEMarks": "30",
+  "paperTotalMarks": "77",
+  "paperGrade": "B+",
+  "paperCredits": "4",
+  "paperGradePoints": "8",
+  "paperPointsScored": "32",
+  "paperSemesterNo": "1",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629ca"
+  },
+  "paperNo": "3",
+  "paperCode": "MCA-111",
+  "paperName": "Object Oriented Programming with C++",
+  "paperType": "Cr.",
+  "paperCEMarks": "48",
+  "paperMEMarks": "43",
+  "paperTotalMarks": "91",
+  "paperGrade": "A+",
+  "paperCredits": "5",
+  "paperGradePoints": "10",
+  "paperPointsScored": "50",
+  "paperSemesterNo": "1",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629cb"
+  },
+  "paperNo": "4",
+  "paperCode": "MCA-112",
+  "paperName": "Database Management Systems",
+  "paperType": "Cr.",
+  "paperCEMarks": "47",
+  "paperMEMarks": "37",
+  "paperTotalMarks": "84",
+  "paperGrade": "A",
+  "paperCredits": "5",
+  "paperGradePoints": "9",
+  "paperPointsScored": "45",
+  "paperSemesterNo": "1",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629cc"
+  },
+  "paperNo": "5",
+  "paperCode": "MCA-113",
+  "paperName": "Computer Organization & Architecture",
+  "paperType": "Cr.",
+  "paperCEMarks": "47",
+  "paperMEMarks": "29",
+  "paperTotalMarks": "76",
+  "paperGrade": "B+",
+  "paperCredits": "4",
+  "paperGradePoints": "8",
+  "paperPointsScored": "32",
+  "paperSemesterNo": "1",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d2"
+  },
+  "paperNo": "5",
+  "paperCode": "MCA-204",
+  "paperName": "Operating System Concepts  ",
+  "paperType": "Cr.",
+  "paperCEMarks": "42",
+  "paperMEMarks": "45",
+  "paperTotalMarks": "87",
+  "paperGrade": "A",
+  "paperCredits": "5",
+  "paperGradePoints": "9",
+  "paperPointsScored": "45",
+  "paperSemesterNo": "2",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629cf"
+  },
+  "paperNo": "2",
+  "paperCode": "MCA-205",
+  "paperName": "Software Lab-2",
+  "paperType": "Cr.",
+  "paperCEMarks": "36",
+  "paperMEMarks": "41",
+  "paperTotalMarks": "77",
+  "paperGrade": "B+",
+  "paperCredits": "2",
+  "paperGradePoints": "8",
+  "paperPointsScored": "16",
+  "paperSemesterNo": "2",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d0"
+  },
+  "paperNo": "3",
+  "paperCode": "MCA-202",
+  "paperName": "Data Structures & Applications",
+  "paperType": "Cr.",
+  "paperCEMarks": "46",
+  "paperMEMarks": "42",
+  "paperTotalMarks": "88",
+  "paperGrade": "A",
+  "paperCredits": "5",
+  "paperGradePoints": "9",
+  "paperPointsScored": "45",
+  "paperSemesterNo": "2",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629ce"
+  },
+  "paperNo": "1",
+  "paperCode": "MCA-201",
+  "paperName": " JAVA Programming",
+  "paperType": "Cr.",
+  "paperCEMarks": "34",
+  "paperMEMarks": "35",
+  "paperTotalMarks": "69",
+  "paperGrade": "B",
+  "paperCredits": "5",
+  "paperGradePoints": "7",
+  "paperPointsScored": "35",
+  "paperSemesterNo": "2",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f62c12d5a4b6905ed629d1"
+  },
+  "paperNo": "4",
+  "paperCode": "MCA-203",
+  "paperName": "Web Technologies",
+  "paperType": "Cr.",
+  "paperCEMarks": "45",
+  "paperMEMarks": "37",
+  "paperTotalMarks": "82",
+  "paperGrade": "A",
+  "paperCredits": "5",
+  "paperGradePoints": "9",
+  "paperPointsScored": "45",
+  "paperSemesterNo": "2",
+  "student": {
+    "$oid": "62f62c12d5a4b6905ed629c6"
+  },
+  "__v": 0
+}]
