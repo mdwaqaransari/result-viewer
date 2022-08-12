@@ -1,4 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://user_mwa:admin  @cluster0-j8jez.mongodb.net/dawadaru?retryWrites=true&w=majority",
+  "mongoURI": "mongodb+srv://user_mwa:admin  @cluster0-j8jez.mongodb.net/mmmut?retryWrites=true&w=majority",
   "mongoURILocal": "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false"
 }
