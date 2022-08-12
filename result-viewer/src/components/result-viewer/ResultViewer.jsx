@@ -5,20 +5,21 @@ import axios from "axios";
 
 export default function ResultViewer() {
   const [papers, setPapers] = useState([]);
+  const [paperInfo, setPaperInfo] = useState({});
   const [searchParams, setSearchParams] = useSearchParams();
   const semesters = ["1", "2", "3", "4"];
   useEffect(() => {
     let rollNo = searchParams.get("rollNo");
-    (async () =>{
-      try {
-        let res = await axios.get("https://localhost:5000/api/student/papers", {
-          rollNo,
-        });
-        console.log(res);
-      } catch (err) {
-        console.log(err);
-      }
-    })();
+    // (async () =>{
+    //   try {
+    //     let res = await axios.get("https://localhost:5000/api/student/papers", {
+    //       rollNo,
+    //     });
+    //     console.log(res);
+    //   } catch (err) {
+    //     console.log(err);
+    //   }
+    // })();
     console.log(rollNo);
 
     setPapers(papersData);
@@ -28,13 +29,26 @@ export default function ResultViewer() {
   const calculateTotalMarksOfSemester = (semesterNo) => {
     let totalMarks = 0;
     let count = 0;
+    let credits = 0;
+    let points = 0;
+    let pointsScored = 0;
     papers.forEach((paper) => {
       if (paper.paperSemesterNo === semesterNo) {
         if (paper.paperType === "Cr.") {
           count++;
+          credits += parseInt(paper.paperCredits);
+          points += parseInt(paper.paperGradePoints);
+          pointsScored += parseInt(paper.paperPointsScored);
           totalMarks += parseInt(paper.paperTotalMarks);
         }
       }
+      setPaperInfo({
+        count,
+        credits,
+        points,
+        pointsScored,
+        totalMarks,
+      });
     });
     return `${totalMarks}/${count * 100}`;
   };
@@ -85,11 +99,15 @@ export default function ResultViewer() {
             </table>
             <div className="other-details">
               <span>
-                Total marks without audit paper: &nbsp;
-                {calculateTotalMarksOfSemester(semester)}
+                Total marks without audit paper : &nbsp;
+                {paperInfo.totalMarks}/{paperInfo.count*100}
               </span>
               <br />
-              <span>Total marks with audit paper: &nbsp; Kya kroge janke</span>
+              <span>Total marks with audit paper : &nbsp; Kya kroge janke</span>
+              <br />
+              <span>
+                <strong>Semester CGPA : &nbsp; </strong>
+              </span>
             </div>
           </div>
         );
