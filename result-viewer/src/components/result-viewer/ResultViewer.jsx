@@ -1,30 +1,32 @@
 import React, { useState, useEffect } from "react";
-import papersData from "./paper.json";
+// import papersData from "./paper.json";
 import { useSearchParams } from "react-router-dom";
 import axios from "axios";
 
-export default function ResultViewer() {
+export default function ResultViewer(props) {
   const [papers, setPapers] = useState([]);
   const [paperInfo, setPaperInfo] = useState({});
   const [searchParams, setSearchParams] = useSearchParams();
   const semesters = ["1", "2", "3", "4"];
   useEffect(() => {
-    let rollNo = searchParams.get("rollNo");
-    // (async () =>{
-    //   try {
-    //     let res = await axios.get("https://localhost:5000/api/student/papers", {
-    //       rollNo,
-    //     });
-    //     console.log(res);
-    //   } catch (err) {
-    //     console.log(err);
-    //   }
-    // })();
-    console.log(rollNo);
-
-    setPapers(papersData);
-    console.log(papersData);
-  }, []);
+    let rollNo;
+    if (props.rollNumber) {
+      rollNo = props.rollNumber;
+    } else {
+      rollNo = searchParams.get("rollNo");
+    }
+    (async () => {
+      try {
+        let res = await axios.get(
+          "http://localhost:5000/api/student/papers/" + rollNo
+        );
+        setPapers(res.data);
+        calculateTotalMarksOfSemester("1");
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, [props]);
 
   const calculateTotalMarksOfSemester = (semesterNo) => {
     let totalMarks = 0;
@@ -42,20 +44,21 @@ export default function ResultViewer() {
           totalMarks += parseInt(paper.paperTotalMarks);
         }
       }
-      setPaperInfo({
+      let info = {
         count,
         credits,
         points,
         pointsScored,
         totalMarks,
-      });
+      };
+      console.log(info);
+      setPaperInfo(info);
     });
-    return `${totalMarks}/${count * 100}`;
   };
   return (
     <div className="container">
       <div className="heading">
-        <h2 className="display-5 mt-4">View Result</h2>
+        <h2 className="display-5 mt-4">RESULT</h2>
       </div>
       {semesters.map((semester) => {
         return (
@@ -77,7 +80,7 @@ export default function ResultViewer() {
                 </tr>
               </thead>
               <tbody>
-                {papersData.map((paper) => {
+                {papers.map((paper) => {
                   return paper.paperSemesterNo === semester ? (
                     <tr key={paper.paperCode}>
                       {/* <td>{paper.paperSemesterNo}</td> */}
@@ -100,13 +103,17 @@ export default function ResultViewer() {
             <div className="other-details">
               <span>
                 Total marks without audit paper : &nbsp;
-                {paperInfo.totalMarks}/{paperInfo.count*100}
+                {paperInfo.totalMarks}/{parseInt(paperInfo.count) * 100}
               </span>
               <br />
               <span>Total marks with audit paper : &nbsp; Kya kroge janke</span>
               <br />
               <span>
-                <strong>Semester CGPA : &nbsp; </strong>
+                <strong>
+                  Semester CGPA : &nbsp;{" "}
+                  {parseInt(paperInfo.pointsScored) /
+                    parseInt(paperInfo.credits)}
+                </strong>
               </span>
             </div>
           </div>
